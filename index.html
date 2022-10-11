@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+    
+  <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+    <!--<img  src="img/bdayPP.JPG"class = "img-fluid w-5" alt="PPLogo">-->
+    <li class="nav-item" role="presentation">
+      <button  class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button  class="nav-link" id="pills-Experience-tab" data-bs-toggle="pill" data-bs-target="#pills-Experience" type="button" role="tab" aria-controls="pills-Experience" aria-selected="false">Experience</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-Interests-tab" data-bs-toggle="pill" data-bs-target="#pills-Interests" type="button" role="tab" aria-controls="pills-Interests" aria-selected="false">Interests</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" >Contact</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+
+    <!--HOME TAB-->
+
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+       <!--CONTAINER FOR FIRST TAB-->
+
+      <div class="container">
+        <!--CAROUSEL-->
+      <section>  
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" class="d-block w-100 " alt="">
+            <div class="card" style="width: 20rem;">
+                <img src="img/SKI.jpg" class="card-img-top" alt="...">
+              </div>
+            <div class="carousel-caption d-none d-md-block">
+              
+              <h2>Hello, My Name is Emmett Murray</h2>
+               
+            <p> I am currently a 3rd year Computer Science Student at Queens University</p>
+            </div>
+            
+            <!-- <h2>About me page</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+              Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+               Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100 " alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>second slide label</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <!-- <h2>About me page</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+              Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+               Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>third slide label</h1>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <!-- <h2>About me page</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+              Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+               Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> </section>
+
+      <section> <h1>About Me Section</h1> </section>
+
+      <section> <h1>Studies Section</h1> </section>
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="tab-pane fade" id="pills-Experience" role="tabpanel" aria-labelledby="pills-Experience-tab" tabindex="0">
+      experience test
+    </div>
+    <div class="tab-pane fade" id="pills-Interests" role="tabpanel" aria-labelledby="pills-Interests-tab" tabindex="0">
+      interest test
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+      contact test
+    </div>
+ 
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+
+body{
+    width:100vw;
+    height: 100vh;
+    margin: 0;    
+}
+
+.container {
+    width: 100vw;
+    max-width: none;
+    padding: 0%;
+    height:100vh;
+    max-height: none;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    
+   
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    width: 99vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    background-color: transparent;
+}
+.carousel-item{
+   
+    height: 100vh;
+    width: 100vw;
+    min-height: 300px;
+    background: linear-gradient(
+        to right, #833ab4,
+        #fd1d1d, #fcb045);
+     background-size: 400% 400%;
+    animation: carousel-item 10s infinite ease-in-out;
+
+
+}
+@keyframes carousel-item {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.carousel-caption{
+    position: absolute;
+ 
+     left:10%;
+    top:50%;
+    transform: translate(-20%,-20%);
+ 
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
+.card{
+    position: absolute;
+    left:60%;
+    top:30%;
+  
+ width: 20rem;
+ background: transparent;
+ border-radius: 4px;
+ transition: 
+ box-shadow .5s, 
+ transform .25s;
+}
+.card:hover{
+    box-shadow:
+    5px 3px
+     rgba(255,255,255, .5),
+     10px 6px
+     rgba(255,255,255, .4),
+     15px 9px
+     rgba(255,255,255, .3);
+    transform:
+    rotate(20deg) 
+    skew(-10deg, -5deg);
+    transition: 
+    box-shadow .75s, 
+    transform .375s;
+}
+h2{
+    width: auto;
+    display: inline-block;
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
